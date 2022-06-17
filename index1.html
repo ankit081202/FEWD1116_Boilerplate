@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Shoe Brands Over the Years</h1>
+    <h2 class="old">1950</h2>
+    <h2 class="mid">1980</h2>
+    <h2 class="new">2000</h2>
+    <h2>Nike</h3>
+    <picture>
+        <!-- Iteration 1 : Add the required media query -->
+        <source srcset="./assets/nike_old.png">
+        <!-- Iteration 2 : Add required srcset for devices having max-width of 1000px  -->
+        <source media="(max-width:1000px)" >
+        <img src="./assets/nike_new.jpg" >
+    </picture>
+    <h2>Adidas</h3>
+    <picture>
+        <!-- Iteration 3 : Add a source tag containing a srcset which displays adidas old logo for devices of maximum width of 600px -->
+        <source media="(max-width:1000px)" srcset="./assets/adidas_mid.jpg">
+        <img src="./assets/adidas_new.png" >
+    </picture>
+    <h2>Puma</h3>
+    <!-- Iteration 4 : Create a picture tag for adding Puma's logo. Ensure that the logo changes with change in devices's width  -->
+</body>
+</html>
